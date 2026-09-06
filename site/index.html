@@ -483,7 +483,31 @@
     font-style: italic;
   }
 
+  /* ── WORKOUT LOGGER FORM ── */
+  #workout-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 18px;
+  }
+
+  #workout-form label { font-weight: 700; align-self: end; }
+  #workout-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8c2cc;
+    border-radius: 5px;
+    font: inherit;
+  }
+  #workout-form .btn, #logger-message { grid-column: 1 / -1; }
+  .delete-workout { padding: 6px 10px; cursor: pointer; }
+
+  @media (max-width: 600px) {
+    #workout-form { grid-template-columns: 1fr; }
+    #workout-form .btn, #logger-message { grid-column: 1; }
+  }
+
   /* ── PRINT ── */
+
   @media print {
     header, footer { display: none; }
     .page { display: block !important; page-break-after: always; }
@@ -505,6 +529,7 @@
     <a href="#nutrition" data-page="nutrition" onclick="show('nutrition', this); return false;">Nutrition</a>
     <a href="#recovery" data-page="recovery" onclick="show('recovery', this); return false;">Rest &amp; Pre-Workout</a>
     <a href="#mental" data-page="mental" onclick="show('mental', this); return false;">Mental Health</a>
+    <a href="#logger" data-page="logger" onclick="show('logger', this); return false;">Workout Logger</a>
     <a href="#sources" data-page="sources" onclick="show('sources', this); return false;">Sources</a>
   </nav>
 </header>
@@ -795,6 +820,57 @@
     </div>
   </div>
 
+  <div id="page-logger" class="page">
+    <div class="page-header">
+      <h1>Workout Logger</h1>
+      <p>Record a workout on this device.</p>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <h2>Add a workout</h2>
+        <form id="workout-form">
+          <label for="workout-date">Date</label>
+          <input id="workout-date" type="date" required>
+
+          <label for="exercise">Exercise</label>
+          <input id="exercise" type="text" maxlength="40" required>
+
+          <label for="sets">Sets</label>
+          <input id="sets" type="number" min="1" max="20" required>
+
+          <label for="reps">Repetitions</label>
+          <input id="reps" type="number" min="1" max="100" required>
+
+          <label for="weight">Weight in kg (optional)</label>
+          <input id="weight" type="number" min="0" max="500" step="0.5">
+
+          <button class="btn" type="submit">Save workout</button>
+        </form>
+        <p id="logger-message" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="card">
+        <h2>Workout history</h2>
+        <p id="no-workouts">No workouts saved yet.</p>
+        <div class="table-wrap">
+          <table id="workout-table" hidden>
+            <thead>
+              <tr><th>Date</th><th>Exercise</th><th>Sets</th><th>Reps</th><th>kg</th><th></th></tr>
+            </thead>
+            <tbody id="workout-rows"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <strong>About your data</strong>
+        Entries stay in this browser and are not sent to the website owner.
+        This logger records workouts; it does not provide medical or training advice.
+      </div>
+    </div>
+  </div>
+
   <div id="page-sources" class="page">
     <div class="page-header">
       <h1>📚 Bibliography</h1>
@@ -904,7 +980,120 @@
   window.addEventListener('DOMContentLoaded', () => {
     const pageId = window.location.hash.slice(1);
     if (pageId && document.getElementById('page-' + pageId)) show(pageId);
+
+    loadWorkouts();
+    renderWorkouts();
+    document.getElementById('workout-form').addEventListener('submit', handleWorkoutSubmit);
   });
+
+  // ── WORKOUT LOGGER ──
+  const STORAGE_KEY = 'epq-workout-log';
+  let workouts = [];
+
+  function showLoggerMessage(message) {
+    document.getElementById('logger-message').textContent = message;
+  }
+
+  function saveWorkouts() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(workouts));
+  }
+
+  function loadWorkouts() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+
+    if (!saved) {
+      workouts = [];
+      return;
+    }
+
+    try {
+      const loaded = JSON.parse(saved);
+      workouts = Array.isArray(loaded) ? loaded : [];
+    } catch (error) {
+      workouts = [];
+      showLoggerMessage('Saved workout data could not be read.');
+    }
+  }
+
+  function addCell(row, value) {
+    const cell = document.createElement('td');
+    cell.textContent = value;
+    row.appendChild(cell);
+  }
+
+  function renderWorkouts() {
+    const body = document.getElementById('workout-rows');
+    const table = document.getElementById('workout-table');
+    const emptyMessage = document.getElementById('no-workouts');
+
+    body.textContent = '';
+    table.hidden = workouts.length === 0;
+    emptyMessage.hidden = workouts.length !== 0;
+
+    workouts.slice().reverse().forEach(function (workout) {
+      const row = document.createElement('tr');
+
+      addCell(row, workout.date);
+      addCell(row, workout.exercise);
+      addCell(row, workout.sets);
+      addCell(row, workout.reps);
+      addCell(row, workout.weight === null ? '—' : workout.weight);
+
+      const actionCell = document.createElement('td');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'delete-workout';
+      button.textContent = 'Delete';
+      button.addEventListener('click', function () {
+        deleteWorkout(workout.id);
+      });
+
+      actionCell.appendChild(button);
+      row.appendChild(actionCell);
+      body.appendChild(row);
+    });
+  }
+
+  function deleteWorkout(id) {
+    workouts = workouts.filter(function (workout) {
+      return workout.id !== id;
+    });
+
+    saveWorkouts();
+    renderWorkouts();
+    showLoggerMessage('Workout deleted.');
+  }
+
+  function handleWorkoutSubmit(event) {
+    event.preventDefault();
+
+    const date = document.getElementById('workout-date').value;
+    const exercise = document.getElementById('exercise').value.trim();
+    const sets = Number(document.getElementById('sets').value);
+    const reps = Number(document.getElementById('reps').value);
+    const weightText = document.getElementById('weight').value;
+    const weight = weightText === '' ? null : Number(weightText);
+
+    if (!date || !exercise || sets < 1 || reps < 1 || (weight !== null && weight < 0)) {
+      showLoggerMessage('Please check the workout details.');
+      return;
+    }
+
+    const workout = {
+      id: Date.now(),
+      date: date,
+      exercise: exercise,
+      sets: sets,
+      reps: reps,
+      weight: weight
+    };
+
+    workouts.push(workout);
+    saveWorkouts();
+    renderWorkouts();
+    event.target.reset();
+    showLoggerMessage('Workout saved.');
+  }
 </script>
 
 </body>
