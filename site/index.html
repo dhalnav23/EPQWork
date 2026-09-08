@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Building Muscle as a Teenager — The Real Guide</title>
+<title>Building Muscle as a Teenager — Research Guide</title>
 <style>
   :root {
     --primary: #1c3a5e;
@@ -506,6 +506,18 @@
     #workout-form .btn, #logger-message { grid-column: 1; }
   }
 
+  .card a, .card code { overflow-wrap: anywhere; }
+  [id^="source-"] { scroll-margin-top: 180px; }
+
+
+  .evidence { background: var(--card); border: 1px solid #b8c2cc; border-radius: 10px; margin-bottom: 24px; }
+  .evidence summary { padding: 16px 20px; min-height: 48px; cursor: pointer; font-weight: 700; color: var(--primary); }
+  .evidence summary:hover { background: #ebf5fb; border-radius: 10px; }
+  .evidence summary:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+  .evidence-body { padding: 0 20px 20px; }
+  .evidence-body .card { padding: 0; margin: 0; box-shadow: none; border: 0; }
+  .evidence a { overflow-wrap: anywhere; }
+
   /* ── PRINT ── */
 
   @media print {
@@ -545,7 +557,7 @@
       <div class="card">
         <h2>Why I made this website</h2>
         <p>I started going to the gym in the winter of 2025. When I searched for advice, I found lots of different answers on websites, social media and fitness videos. Some sources did not say whether their advice was suitable for teenagers.</p>
-        <p>I wanted to find out what the evidence says about building muscle safely while the body is still developing. This website gives the main points from my research.</p>
+        <p>This website shares what I found about building muscle while the body is still developing.</p><p>Strength training means making muscles work against a force from weights, bands or body weight. Research papers also call it resistance training.</p><p>Recovery means the body returning towards its normal condition after exercise. Self-esteem means how a person values themselves.</p>
       </div>
 
       <div class="card">
@@ -573,22 +585,21 @@
           </div>
           <div class="answer-card myth" onclick="show('recovery')">
             <div class="ac-topic">😴 Rest and pre-workout</div>
-            <div class="ac-answer">Rest is part of training. Stimulants do not replace sleep.</div>
+            <div class="ac-answer">Rest is part of training. Energy drinks do not replace sleep.</div>
             <div class="ac-go">Read more →</div>
           </div>
           <div class="answer-card care" onclick="show('mental')">
             <div class="ac-topic">🧠 Mental health</div>
-            <div class="ac-answer">Training may help confidence and self-esteem.</div>
+            <div class="ac-answer">Training can help confidence and self-esteem, but benefits are not certain.</div>
             <div class="ac-go">Read more →</div>
           </div>
         </div>
       </div>
 
       <div class="card">
-        <h2>Conclusion</h2>
-        <p>My research supports properly planned resistance training with qualified supervision for teenagers. Some studies found increases in muscle size, but findings were mixed and the evidence remains limited. Learn the correct technique, use a weight that can be controlled, increase the difficulty slowly and leave time for recovery.</p>
-        <p>The review of muscle-growth mechanisms identifies tension on the muscle as the main trigger for growth. Teenagers also need enough food for growth and training. Supplements and high-caffeine drinks are not a replacement for food or rest.</p>
-        <p>Resistance training may help confidence, self-esteem and low mood, but it does not clearly reduce anxiety and it is not a replacement for professional mental health support.</p>
+        <h2>My main message</h2>
+<p>Learn the correct technique with qualified supervision. Build up slowly, eat enough and leave time for recovery. Results differ between people.</p>
+<p>Exercise may help confidence and self-esteem. It does not replace professional mental health support. <a href="#sources" onclick="show('sources'); document.getElementById('source-9').scrollIntoView(); return false;">Source 9</a> <a href="#sources" onclick="show('sources'); document.getElementById('source-10').scrollIntoView(); return false;">Source 10</a></p>
       </div>
 
       <div class="callout info">
@@ -609,31 +620,28 @@
         <ul>
           <li>Hypertrophy means an increase in muscle size.</li>
           <li>Tension on the muscle is the main trigger for growth.</li>
-          <li>The review does not directly examine the role of muscle damage.</li>
-          <li>Some studies found increases in muscle size in young people, but findings were mixed and the evidence remains limited.</li>
+          
+          <li>Teenagers may gain muscle, but the amount is uncertain.</li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>What I thought before researching</h2>
-        <p>I thought weight training worked by damaging muscle fibres. I believed that rest and protein repaired the damage and made the muscle bigger and stronger. I had also heard words such as hypertrophy, progressive overload and time under tension, but I was not sure what they meant.</p>
-      </div>
-
-      <div class="card">
-        <h2>What I found</h2>
-        <p>Hypertrophy means that a muscle gets bigger. This happens when its fibres become thicker over time.</p>
-        <p>Van Every et al. (2025) says that tension on a muscle is the main trigger for growth. Tension is the force placed on a muscle when it works against resistance. Repeating this type of training can make the muscle fibres thicker.</p>
-        <p>This gave me a different explanation to consider: the review puts mechanical tension at the centre of muscle growth. It does not directly examine muscle damage, so I cannot use it to rule out my original idea about damage.</p>
-        <p>Van Every et al. explains how muscles grow, but it is not about teenagers. I needed a source that was closer to my own age.</p>
-        <p>Enomoto and Tottori (2025) looked at research on children and teenagers. Some studies found an increase in muscle size and others found no significant change. The findings were mixed, and the evidence remains insufficient to draw firm conclusions about muscle growth from training in young people.</p>
-        <p>Only a few studies tested an actual training programme. Some used small groups, about a third (10 of 29) did not report the stage of puberty, and there was less research on girls. These problems make the results less certain.</p>
-      </div>
-
-      <div class="callout">
+<div class="card"><h2>What makes a muscle grow?</h2><p>Muscle fibres are the long cells that make up a muscle. They can become thicker through training.</p><p>Mechanical tension is the force in a muscle when it works or stretches. Research identifies this as the main trigger for growth. <a href="#sources" onclick="show('sources'); document.getElementById('source-1').scrollIntoView(); return false;">Source 1</a></p><p>Becoming stronger does not always mean that a muscle has become much bigger. Research cannot predict how much muscle each teenager will gain. <a href="#sources" onclick="show('sources'); document.getElementById('source-2').scrollIntoView(); return false;">Source 2</a></p></div>
+<div class="callout">
         <strong>What I learned</strong>
-        The adult review identifies tension as the main trigger for muscle growth, but does not directly test the role of muscle damage. Research on young people found mixed results, so I cannot promise how much muscle a teenager will gain.
+        Muscle growth takes time, and results differ. The research cannot promise a fixed gain for each teenager.
       </div>
-      <p class="srcline">Sources: 1. Van Every et al. (2025) and 2. Enomoto and Tottori (2025).</p>
+<details class="evidence"><summary>More about the evidence</summary><div class="evidence-body">
+        <h2>What I thought before researching</h2>
+        <p>I thought training worked by damaging muscle fibres, the long cells that make up a muscle. I believed that rest and food repaired the damage and made the muscle bigger.</p>
+      
+        <h2>What I found</h2>
+        
+        <p>Van Every and colleagues (2025) identify mechanical tension as the main trigger for muscle growth from strength training. Mechanical tension is the force in a muscle when it works or stretches. <a href="#sources" onclick="show('sources'); document.getElementById('source-1').scrollIntoView(); return false;">Source 1</a></p>
+        <p>This gave me a different explanation to consider: the review puts mechanical tension at the centre of muscle growth. It does not directly examine muscle damage, so I cannot use it to rule out my original idea about damage.</p>
+        <p>Van Every and colleagues explains how muscles grow, but it is not about teenagers. I needed a source that was closer to my own age. <a href="#sources" onclick="show('sources'); document.getElementById('source-1').scrollIntoView(); return false;">Source 1</a></p>
+        <p>Enomoto and Tottori (2025) examined 29 studies of muscle size in children and teenagers. Only nine tested a training programme. Some studies found muscle growth, but the results differed. <a href="#sources" onclick="show('sources'); document.getElementById('source-2').scrollIntoView(); return false;">Source 2</a></p>
+        <p>Differences in growth, training and ways of measuring muscle size make the results hard to compare. There was also less research on girls. The review cannot predict a fixed muscle gain for each teenager.</p>
+      </div></details>
+<p class="srcline">Sources: <a href="#sources" onclick="show('sources'); document.getElementById('source-1').scrollIntoView(); return false;">Source 1</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-2').scrollIntoView(); return false;">Source 2</a>.</p>
     </div>
   </div>
 
@@ -646,31 +654,23 @@
       <div class="tldr">
         <h2>⚡ The short version</h2>
         <ul>
-          <li>Resistance training can be safe for teenagers.</li>
-          <li>It should be planned properly and supervised by a qualified professional.</li>
+          <li>Strength training can be safe with a suitable programme, correct technique and qualified supervision.</li>
           <li>Good technique matters more than lifting a heavy weight.</li>
           <li>Properly planned training with qualified supervision has not been shown to stunt growth or damage growth plates.</li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>Why I looked into this</h2>
-        <p>After learning how muscles grow, I wanted to know if lifting weights is safe for teenagers. I was worried that it might cause injuries or affect growth. I looked for UK information relevant to children and teenagers.</p>
-        <p>I had heard that lifting weights could damage growth plates, so I wanted to find out what research on supervised youth resistance training said about this concern.</p>
-      </div>
-
-      <div class="card">
-        <h2>What I found</h2>
-        <p>The UK Chief Medical Officers say that young people should do activities that make their muscles and bones stronger.</p>
-        <p>Lloyd et al. (2014) says that resistance training can be safe when it is planned properly and supervised by qualified professionals. Properly planned training with qualified supervision has not been shown to stunt growth or damage growth plates.</p>
-        <p>Injuries can still happen. The risk may be higher when someone uses poor technique, lifts a weight they cannot control or trains without supervision.</p>
-      </div>
-
-      <div class="callout">
+<div class="card"><h2>What safe training involves</h2><p>Strength training makes muscles work against weights, bands or body weight. Qualified supervision means that someone with suitable training watches and helps correct mistakes.</p><p>Growth plates are areas near the ends of growing bones where bones increase in length.</p><p>Injuries can still happen. Learn the correct movement, use a weight you can control and increase it slowly. <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a></p></div>
+<div class="callout">
         <strong>What I learned</strong>
         Resistance training can be safe for teenagers when it is properly planned and supervised by qualified professionals. They should learn the correct technique, start with a weight they can control and increase it slowly.
       </div>
-      <p class="srcline">Sources: 3. UK Chief Medical Officers’ physical activity guidelines and 4. Lloyd et al. (2014).</p>
+<details class="evidence"><summary>More about the evidence</summary><div class="evidence-body">
+        <h2>What I found</h2>
+        <p>The UK Chief Medical Officers recommend varied activities for children aged 5 to 18. These should develop movement skills, muscle fitness and bone strength. This guidance does not give a detailed gym programme. <a href="#sources" onclick="show('sources'); document.getElementById('source-3').scrollIntoView(); return false;">Source 3</a></p>
+        <p>Lloyd and colleagues (2014) says that resistance training can be safe when it is planned properly and supervised by qualified professionals. Properly planned training with qualified supervision has not been shown to stunt growth or damage growth plates. <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a></p>
+        <p>Injuries can still happen. The risk may be higher when someone uses poor technique, lifts a weight they cannot control or trains without supervision.</p>
+      </div></details>
+<p class="srcline">Sources: <a href="#sources" onclick="show('sources'); document.getElementById('source-3').scrollIntoView(); return false;">Source 3</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a>.</p>
     </div>
   </div>
 
@@ -685,29 +685,17 @@
         <ul>
           <li>Learn each movement with a qualified coach before adding more weight.</li>
           <li>Use a weight you can control with good technique.</li>
-          <li>Train two or three times a week, with rest days in between.</li>
+          <li>General guidance suggests two or three sessions a week, with rest days between.</li>
           <li>Increase the difficulty slowly.</li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>Starting safely</h2>
-        <p>I wanted to know how often teenagers should train, how heavy they should lift and how progressive overload works.</p>
-        <p>Lloyd et al. (2014) says that beginners should learn the correct movement first. They can start with little or no weight and add resistance when they can keep good form.</p>
-        <p>The same source recommends two or three sessions each week, with rest days between them.</p>
-      </div>
-
-      <div class="card">
-        <h2>Increasing the difficulty</h2>
-        <p>Progressive overload means making training more difficult over time. This does not only mean adding weight. It can also mean doing another repetition, adding a set or doing the exercise with better control.</p>
-        <p>McQuilliam et al. (2020) reviews young athletes at different stages of maturity, including some with no resistance-training experience. Heavier training needs to be considered alongside physical maturity, technical ability and qualified coaching. My practical conclusion is that beginners should learn the movements with a qualified coach before considering heavier loads.</p>
-      </div>
-
-      <div class="callout warning">
+<div class="card"><h2>Know the terms</h2><p>Strength training makes muscles work against a force. Bodyweight exercises use your own weight. Free weights, such as dumbbells, can move freely.</p><p>A repetition is one complete exercise movement. A set is a group of repetitions before a rest.</p></div><div class="card"><h2>Build up slowly</h2><p>Progressive overload means increasing the demands of training over time. This can mean adding a repetition or a small amount of weight when ready.</p><p>Better control is useful progress even when the weight stays the same. Age alone does not show that you are ready for heavier weights. <a href="#sources" onclick="show('sources'); document.getElementById('source-5').scrollIntoView(); return false;">Source 5</a></p><p>Two or three sessions a week is general guidance, not a fixed plan for everyone. Other sport and exercise also matter when planning rest. <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a></p></div>
+<div class="callout warning">
         <strong>Keep it simple</strong>
         Technique comes first. If you cannot control the weight, it is too heavy for that exercise.
       </div>
-      <p class="srcline">Sources: 4. Lloyd et al. (2014) and 5. McQuilliam et al. (2020).</p>
+<details class="evidence"><summary>More about the evidence</summary><div class="evidence-body"><div class="card"><h2>What the reviews say</h2><p>Lloyd and colleagues (2014) recommend learning each movement with little or no weight before adding resistance. <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a></p><p>McQuilliam and colleagues (2020) reviewed young athletes at different stages of growth and with different training experience. Heavier training depends on physical development, exercise skill and qualified coaching.</p><p>Physical development means how far the body has developed towards adulthood. Advice for athletes will not always suit beginners. <a href="#sources" onclick="show('sources'); document.getElementById('source-5').scrollIntoView(); return false;">Source 5</a></p></div></div></details>
+<p class="srcline">Sources: <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-5').scrollIntoView(); return false;">Source 5</a>.</p>
     </div>
   </div>
 
@@ -726,25 +714,13 @@
           <li>Protein helps to build and repair muscle.</li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>What matters most</h2>
-        <p>Nutrition was one of the most confusing subjects I found online. Much of the advice focused on calorie counting, strict diets and supplements.</p>
-        <p>Everett (2025) reviews adolescent athletes training for more than an hour a day, five or six days a week. These athletes need enough food for growth, training and recovery. Low energy availability can impair recovery and increase injury risk. This is a more active group than many teenage beginners, so the review should not be treated as a personalised eating plan for every teenager.</p>
-        <p>The British Dietetic Association says to eat a varied and balanced diet. Carbohydrate is an important source of energy for exercise, while protein helps muscles build and repair. A normal balanced diet can usually provide enough protein when the person is also eating enough food.</p>
-      </div>
-
-      <div class="card">
-        <h2>Food before supplements</h2>
-        <p>Supplements cannot make up for a poor diet. The British Dietetic Association says that anyone considering a supplement should speak to a registered practitioner to check that it is suitable and safe.</p>
-        <p>A doctor may also be needed if there is a health concern. This is general safety advice, not a claim made by the BDA sport and exercise page.</p>
-      </div>
-
-      <div class="callout">
+<div class="card"><h2>Eat enough and eat a range of foods</h2><p>Recovery means the body returning towards its normal condition after exercise. Eating too little can affect recovery and increase injury risk. <a href="#sources" onclick="show('sources'); document.getElementById('source-6').scrollIntoView(); return false;">Source 6</a></p><p>A balanced diet can usually provide enough protein when you also eat enough food. <a href="#sources" onclick="show('sources'); document.getElementById('source-7').scrollIntoView(); return false;">Source 7</a></p></div><div class="card"><h2>Food before supplements</h2><p>Supplements are products taken alongside normal food, such as protein powders. They can help in some cases, but cannot make up for poor food choices.</p><p>Before using one, get advice from a registered health or nutrition professional, such as a registered dietitian. <a href="#sources" onclick="show('sources'); document.getElementById('source-7').scrollIntoView(); return false;">Source 7</a></p></div><div class="card"><h2>What about creatine?</h2><p>Creatine is a substance stored in muscles that helps supply energy during short periods of hard exercise.</p><p>Research on teenagers is limited. It is not a supplement for everyone. Get professional advice before using it. <a href="#sources" onclick="show('sources'); document.getElementById('source-6').scrollIntoView(); return false;">Source 6</a> <a href="#sources" onclick="show('sources'); document.getElementById('source-7').scrollIntoView(); return false;">Source 7</a></p></div>
+<div class="callout">
         <strong>What I learned</strong>
         Eat enough, eat a range of foods and do not treat protein powder as a replacement for meals.
       </div>
-      <p class="srcline">Sources: 6. Everett (2025) and 7. British Dietetic Association (2026).</p>
+<details class="evidence"><summary>More about the evidence</summary><div class="evidence-body"><div class="card"><h2>Who the research covers</h2><p>Everett (2025) reviews teenage athletes who train often. Low energy availability means too little energy remains for normal body functions after exercise. It can affect recovery and increase injury risk.</p><p>The review is not a personal eating plan for every teenager. <a href="#sources" onclick="show('sources'); document.getElementById('source-6').scrollIntoView(); return false;">Source 6</a></p><p>Everett describes limited research on creatine in teenagers and conditions for use by teenage athletes. This does not justify saying all experts agree for or against its use. <a href="#sources" onclick="show('sources'); document.getElementById('source-6').scrollIntoView(); return false;">Source 6</a></p><p>A doctor can help with a health concern. This website gives general information, not a personal eating or supplement plan.</p></div></div></details>
+<p class="srcline">Sources: <a href="#sources" onclick="show('sources'); document.getElementById('source-6').scrollIntoView(); return false;">Source 6</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-7').scrollIntoView(); return false;">Source 7</a>.</p>
     </div>
   </div>
 
@@ -760,28 +736,16 @@
           <li>Rest days give the body time to recover.</li>
           <li>Sport and other exercise also count towards the total amount of activity.</li>
           <li>Energy-drink guidance does not cover every pre-workout product.</li>
-          <li>A stimulant should not be used to cover up tiredness.</li>
+          <li>Energy drinks do not replace rest.</li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>Rest between sessions</h2>
-        <p>Earlier topics showed that resistance training can be safe for teenagers. I still had two questions. How much rest do teenagers need, and are pre-workout drinks safe?</p>
-        <p>Lloyd et al. (2014) recommends training two or three times a week, with rest days in between. Other exercise and sport should also be considered. The body needs time to recover.</p>
-      </div>
-
-      <div class="card">
-        <h2>High-caffeine drinks</h2>
-        <p>The government consultation outcome says evidence suggests a link between high-caffeine energy drinks and negative outcomes for children’s physical and mental health and their education.</p>
-        <p>The government plans to ban their sale to children under 16 in England from April 2027. The change is subject to Parliament, so it is not yet law.</p>
-        <p>The government information is about energy drinks, not every pre-workout product. Different products contain different ingredients. The British Dietetic Association says that people considering sports supplements should speak to a registered professional.</p>
-      </div>
-
-      <div class="callout warning">
+<div class="card"><h2>Leave time for recovery</h2><p>Recovery means the body returning towards its normal condition after exercise. General guidance suggests two or three strength sessions a week, with rest days between.</p><p>Include other sport and exercise when planning rest. <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a></p></div><div class="card"><h2>Check pre-workout products</h2><p>Pre-workout products are sold for use before exercise. Some contain caffeine, a stimulant that can make you feel more alert.</p><p>High-caffeine energy drinks carry a warning that they are not recommended for children. Products differ, so this guidance does not cover every pre-workout product. <a href="#sources" onclick="show('sources'); document.getElementById('source-8').scrollIntoView(); return false;">Source 8</a></p><p>Get advice from a registered health or nutrition professional before using a supplement. <a href="#sources" onclick="show('sources'); document.getElementById('source-7').scrollIntoView(); return false;">Source 7</a></p></div>
+<div class="callout warning">
         <strong>What I learned</strong>
         Rest is part of training. Teenagers should avoid high-caffeine energy drinks and get advice before using a pre-workout supplement.
       </div>
-      <p class="srcline">Sources: 4. Lloyd et al. (2014), 7. British Dietetic Association (2026) and 8. Department of Health and Social Care (2026).</p>
+<details class="evidence"><summary>More about the evidence</summary><div class="evidence-body"><div class="card"><h2>What the government decision covers</h2><p>The government decision records a planned ban on sales of high-caffeine energy drinks to children under 16 in England. It does not show that the ban has started.</p><p>The planned rules include some powders mixed into drinks, but do not cover every pre-workout product. Public responses alone do not prove health effects. <a href="#sources" onclick="show('sources'); document.getElementById('source-8').scrollIntoView(); return false;">Source 8</a></p></div></div></details>
+<p class="srcline">Sources: <a href="#sources" onclick="show('sources'); document.getElementById('source-4').scrollIntoView(); return false;">Source 4</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-7').scrollIntoView(); return false;">Source 7</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-8').scrollIntoView(); return false;">Source 8</a>.</p>
     </div>
   </div>
 
@@ -800,23 +764,17 @@
           <li>Exercise is not a replacement for professional mental health support.</li>
         </ul>
       </div>
-
-      <div class="card">
-        <h2>What I wanted to find out</h2>
-        <p>Before researching this topic, I thought resistance training could improve mood, reduce stress and build confidence. I wanted to find out if there was evidence for this.</p>
-      </div>
-
-      <div class="card">
-        <h2>What the studies found</h2>
-        <p>Zhou et al. (2025) found that exercise may help with symptoms of depression and improve self-esteem in young people. Resistance training appeared to be particularly helpful for self-esteem. There was no clear improvement in anxiety.</p>
-        <p>Collins et al. (2019) looked only at resistance training. Young people became more confident in their ability to train. There were also small improvements in how they felt about themselves. However, it did not clearly improve how they felt about their appearance.</p>
-      </div>
-
-      <div class="callout info">
+<div class="card"><h2>Confidence and how you feel</h2><p>Strength training makes muscles work against weights, bands or body weight. Self-esteem means how you value yourself.</p><p>Self-efficacy means confidence in doing a particular task, such as strength training. Body image means how you think and feel about your body.</p><p>Research suggests possible benefits for confidence and self-esteem. Results for anxiety and feelings about appearance are less clear. This does not prove that nobody can benefit. <a href="#sources" onclick="show('sources'); document.getElementById('source-9').scrollIntoView(); return false;">Source 9</a> <a href="#sources" onclick="show('sources'); document.getElementById('source-10').scrollIntoView(); return false;">Source 10</a></p></div>
+<div class="callout info">
         <strong>What I learned</strong>
-        Resistance training may improve confidence and self-esteem. It may also help with low mood, but it will not have the same effect on everyone. Anyone struggling with their mental health should speak to a GP, counsellor or another trusted professional.
+        Resistance training may improve confidence and self-esteem. Possible benefits are not a promise that everyone will feel better. Anyone struggling with their mental health should speak to a GP, counsellor or another trusted professional.
       </div>
-      <p class="srcline">Sources: 9. Zhou et al. (2025) and 10. Collins et al. (2019).</p>
+<details class="evidence"><summary>More about the evidence</summary><div class="evidence-body">
+        <h2>What the studies found</h2>
+        <p>Zhou and colleagues (2025) combined results from 27 trials involving 3,059 children and teenagers. A trial tests an activity or treatment and measures the results. The review found possible benefits for depression symptoms and self-esteem. <a href="#sources" onclick="show('sources'); document.getElementById('source-9').scrollIntoView(); return false;">Source 9</a></p><p>The combined results gave no clear evidence of an overall anxiety benefit. This does not prove that exercise never helps anxiety. The authors rated the evidence as low or moderate, so it cannot confidently identify the best exercise type for everyone.</p>
+        <p>Collins and colleagues (2019) reviewed seven studies of children aged 10 to 16 and combined results from four. These results showed improvements in confidence about training and feelings of self-worth. <a href="#sources" onclick="show('sources'); document.getElementById('source-10').scrollIntoView(); return false;">Source 10</a></p><p>There was no statistically significant improvement in feelings about body attractiveness. This means there was no clear evidence of that improvement, not proof that nobody can feel better about their appearance. Only two studies received a strong quality rating.</p>
+      </div></details>
+<p class="srcline">Sources: <a href="#sources" onclick="show('sources'); document.getElementById('source-9').scrollIntoView(); return false;">Source 9</a>, <a href="#sources" onclick="show('sources'); document.getElementById('source-10').scrollIntoView(); return false;">Source 10</a>.</p>
     </div>
   </div>
 
@@ -829,6 +787,7 @@
     <div class="content">
       <div class="card">
         <h2>Add a workout</h2>
+        <p>A repetition is one complete exercise movement. A set is a group of repetitions before a rest. Weight is optional for bodyweight exercises.</p>
         <form id="workout-form">
           <label for="workout-date">Date</label>
           <input id="workout-date" type="date" required>
@@ -865,96 +824,35 @@
 
       <div class="callout info">
         <strong>About your data</strong>
-        Entries stay in this browser and are not sent to the website owner.
-        This logger records workouts; it does not provide medical or training advice.
+        Entries stay in this browser and are not sent to the website owner. They do not automatically appear on another device. Clearing stored browser data can remove them.
+        This logger records workouts; it does not choose exercises or weights and does not provide medical advice.
       </div>
     </div>
   </div>
 
   <div id="page-sources" class="page">
-    <div class="page-header">
-      <h1>📚 Bibliography</h1>
-      <p>The sources used on this website, with the main point and a short reliability check.</p>
-    </div>
+    <div class="page-header"><h1>Bibliography</h1><p>The sources used, what I learned and the limits of the evidence.</p></div>
     <div class="content">
-      <div class="card">
-        <h2>1. Van Every et al. (2025)</h2>
-        <p>Van Every, D.W., Lees, M.J., Wilson, B., Nippard, J. and Phillips, S.M. (2025) ‘Load-induced human skeletal muscle hypertrophy: Mechanisms, myths, and misconceptions’, <em>Journal of Sport and Health Science</em>, 15, 101104. <a href="https://doi.org/10.1016/j.jshs.2025.101104" target="_blank" rel="noopener">doi:10.1016/j.jshs.2025.101104</a>.</p>
-        <p><strong>Main takeaway:</strong> The review identifies tension on a muscle as the main trigger for growth. It does not directly examine muscle damage, so I cannot use it to rule out my original explanation about damage.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it was published in a scientific journal and uses evidence from many earlier studies. It is not about teenagers, so I only used it to explain the general process.</p>
+      <div class="card"><h2>How to read the sources</h2>
+        <p>Sources 1 to 10 provide the health information. The final entry explains a source I checked but did not use as evidence.</p>
+        <p>A review brings together earlier studies. Its conclusions depend on those studies and how the authors compare them. A journal publication does not guarantee that every claim is correct.</p>
+        <p>In article titles, resistance training means strength training, and adolescents means teenagers. A scoping review maps the research available. A systematic review uses a planned method to find and compare studies.</p>
+        <p>A meta-analysis uses statistics to combine study results. A network meta-analysis compares several options using results from different studies. A narrative review explains research without necessarily using a systematic search.</p>
+        <p>Peer review means that other specialists checked an article before publication. The term <em>et al.</em> means “and colleagues”. Neither a source's age nor an author's job alone decides its reliability.</p>
       </div>
-
-      <div class="card">
-        <h2>2. Enomoto and Tottori (2025)</h2>
-        <p>Enomoto, S. and Tottori, N. (2025) ‘Muscle morphological adaptations to resistance training and sports participation in children and adolescents: a scoping review’, <em>Frontiers in Sports and Active Living</em>, 7, 1646835. <a href="https://doi.org/10.3389/fspor.2025.1646835" target="_blank" rel="noopener">doi:10.3389/fspor.2025.1646835</a>.</p>
-        <p><strong>Main takeaway:</strong> Some studies found increases in muscle size in young people, but findings were mixed and the evidence remains limited.</p>
-        <p><strong>Reliability:</strong> I think this is a useful and reliable starting point because it is a recent review about people under 18. Only a few studies tested a training programme, some groups were small and there was less research on girls. This means it cannot predict how much every teenager will gain.</p>
-      </div>
-
-      <div class="card">
-        <h2>3. Department of Health and Social Care (2026)</h2>
-        <p>Department of Health and Social Care (2026) <em>UK Chief Medical Officers’ physical activity guidelines</em>. Updated 10 July 2026. <a href="https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report" target="_blank" rel="noopener">Available on GOV.UK</a>.</p>
-        <p><strong>Main takeaway:</strong> Children and teenagers should do activities that develop movement skills and make their muscles and bones stronger.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it is current guidance from the UK Chief Medical Officers. It is about general physical activity, so it does not give detailed instructions for lifting weights.</p>
-      </div>
-
-      <div class="card">
-        <h2>4. Lloyd et al. (2014)</h2>
-        <p>Lloyd, R.S. <em>et al.</em> (2014) ‘Position statement on youth resistance training: the 2014 International Consensus’, <em>British Journal of Sports Medicine</em>, 48(7), pp. 498–505. <a href="https://doi.org/10.1136/bjsports-2013-092952" target="_blank" rel="noopener">doi:10.1136/bjsports-2013-092952</a>.</p>
-        <p><strong>Main takeaway:</strong> Resistance training can be safe for young people when it is suitable for their ability, properly taught and supervised by qualified professionals.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it was written by experts in youth training and sports medicine and was published in a medical journal. It is older, so I used it with current UK guidance.</p>
-      </div>
-
-      <div class="card">
-        <h2>5. McQuilliam et al. (2020)</h2>
-        <p>McQuilliam, S.J., Clark, D.R., Erskine, R.M. and Brownlee, T.E. (2020) ‘Free-Weight Resistance Training in Youth Athletes: A Narrative Review’, <em>Sports Medicine</em>, 50(9), pp. 1567–1580. <a href="https://doi.org/10.1007/s40279-020-01307-7" target="_blank" rel="noopener">doi:10.1007/s40279-020-01307-7</a>.</p>
-        <p><strong>Main takeaway:</strong> Heavier training needs to be considered alongside physical maturity, technical ability and qualified coaching. The review includes young athletes with different levels of resistance-training experience.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it was written by UK university researchers and published in a scientific journal. It focuses on young athletes, so all of its advice may not suit a beginner.</p>
-      </div>
-
-      <div class="card">
-        <h2>6. Everett (2025)</h2>
-        <p>Everett, S. (2025) ‘Optimizing performance nutrition for adolescent athletes: A review of dietary needs, risks, and practical strategies’, <em>Nutrients</em>, 17(17), 2792. <a href="https://doi.org/10.3390/nu17172792" target="_blank" rel="noopener">doi:10.3390/nu17172792</a>.</p>
-        <p><strong>Main takeaway:</strong> Adolescent athletes training most days need enough food for both normal growth and their training demands.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it is a recent review about adolescent athletes and was published in a scientific journal. It is an American review written by one author, so I compared its general advice with the British Dietetic Association.</p>
-      </div>
-
-      <div class="card">
-        <h2>7. British Dietetic Association (2026)</h2>
-        <p>British Dietetic Association (2026) <em>Sport and exercise</em>. Published May 2026. <a href="https://www.bda.uk.com/resource/sport-exercise-nutrition.html" target="_blank" rel="noopener">Available from the BDA</a>.</p>
-        <p><strong>Main takeaway:</strong> A varied diet should provide energy for exercise and support recovery. Food comes before supplements.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it is current UK guidance produced by registered nutrition professionals. It gives general sports nutrition advice and is not only about teenage muscle building.</p>
-      </div>
-
-      <div class="card">
-        <h2>8. Department of Health and Social Care (2026)</h2>
-        <p>Department of Health and Social Care (2026) <em>Banning the sale of high-caffeine energy drinks to children: consultation outcome</em>. Published 16 July 2026. <a href="https://www.gov.uk/government/consultations/banning-the-sale-of-high-caffeine-energy-drinks-to-children/outcome/banning-the-sale-of-high-caffeine-energy-drinks-to-children-consultation-outcome" target="_blank" rel="noopener">Available on GOV.UK</a>.</p>
-        <p><strong>Main takeaway:</strong> The government plans to ban the sale of high-caffeine energy drinks to children under 16 in England from April 2027.</p>
-        <p><strong>Reliability:</strong> This is reliable for explaining the government’s decision and planned date. It is about energy drinks, not every type of pre-workout, and the change is still subject to Parliament.</p>
-      </div>
-
-      <div class="card">
-        <h2>9. Zhou et al. (2025)</h2>
-        <p>Zhou, S., Xu, Y., Yang, Y., Song, H., Wang, X. and Yu, Y. (2025) ‘Effect of exercise interventions on depression, anxiety, and self-esteem in children and adolescents: a systematic review and network meta-analysis’, <em>BMC Public Health</em>, 25, 3706. <a href="https://doi.org/10.1186/s12889-025-25044-6" target="_blank" rel="noopener">doi:10.1186/s12889-025-25044-6</a>.</p>
-        <p><strong>Main takeaway:</strong> Exercise may improve low mood and self-esteem in young people, but it did not clearly improve anxiety.</p>
-        <p><strong>Reliability:</strong> I think this is fairly reliable because it is a recent review that combined several studies. The authors rated the evidence as low to moderate, so the results are not certain.</p>
-      </div>
-
-      <div class="card">
-        <h2>10. Collins et al. (2019)</h2>
-        <p>Collins, H., Booth, J.N., Duncan, A., Fawkner, S. and Niven, A. (2019) ‘The Effect of Resistance Training Interventions on “The Self” in Youth: a Systematic Review and Meta-analysis’, <em>Sports Medicine – Open</em>, 5, 29. <a href="https://doi.org/10.1186/s40798-019-0205-0" target="_blank" rel="noopener">doi:10.1186/s40798-019-0205-0</a>.</p>
-        <p><strong>Main takeaway:</strong> Resistance training may improve confidence and self-esteem in young people.</p>
-        <p><strong>Reliability:</strong> I think this is reliable because it was written by UK university researchers and published in a scientific journal. It only found seven suitable studies, so the result is based on a small amount of research.</p>
-      </div>
-
-      <div class="card">
-        <h2>A website I checked but did not use as evidence</h2>
-        <p>I also found a StrengthLog article written for teenagers. It was easy to understand and linked to scientific research. However, it was published by a company that makes a training app and promotes it in the article. It also recommended creatine without clearly explaining that guidance for teenagers is not agreed. I decided to use the original research and professional guidance instead.</p>
-      </div>
-
-      <div class="callout info">
-        <strong>Limits of my research</strong>
-        Some studies were about adults or trained young athletes rather than teenage beginners. There were also fewer studies on teenagers than adults. Age, puberty, sex and training experience may affect the results.
+<div class="card" id="source-1"><h2>1. Van Every and colleagues (2025)</h2><p>Van Every, D.W., Lees, M.J., Wilson, B., Nippard, J. and Phillips, S.M. (2025, first published online) &#x27;Load-induced human skeletal muscle hypertrophy: Mechanisms, myths, and misconceptions&#x27;, <em>Journal of Sport and Health Science</em>, 15, 101104. Published in volume 15 (2026). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12927080/" target="_blank" rel="noopener">Read article</a>.</p><p>This article brings together research on how muscles grow. I use it to explain mechanical tension, which is the force in a muscle when it works or stretches. The authors explain that this tension is the main trigger for muscle growth from strength training. The article gives links to research, so I can check the evidence behind its claims. Two authors say they work in the fitness industry, which could affect their views. I think it is useful for explaining muscle growth, but it cannot tell each teenager how much muscle they will gain.</p></div>
+<div class="card" id="source-2"><h2>2. Enomoto and Tottori (2025)</h2><p>Enomoto, S. and Tottori, N. (2025) &#x27;Muscle morphological adaptations to resistance training and sports participation in children and adolescents: a scoping review&#x27;, <em>Frontiers in Sports and Active Living</em>, 7, 1646835. <a href="https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2025.1646835/full" target="_blank" rel="noopener">Read article</a>.</p><p>This review looks at the research available on muscle size in children and teenagers. It includes 29 studies, but only nine tested a training programme. Some studies found that muscles grew, but the results were not the same in every study. The authors explain how they searched three research databases, so readers can see how they found the studies. Differences in growth, training and ways of measuring muscle size make the results hard to compare. I use it to show that teenagers can build muscle, but the amount of growth is uncertain.</p></div>
+<div class="card" id="source-3"><h2>3. UK Chief Medical Officers (2026)</h2><p>Department of Health and Social Care (2026) <em>UK Chief Medical Officers&#x27; physical activity guidelines</em>. Updated 10 July 2026. Available at: <a href="https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report/uk-chief-medical-officers-physical-activity-guidelines" target="_blank" rel="noopener">Read source</a></p><p>This source gives health advice from the four UK Chief Medical Officers. For children aged 5 to 18, it recommends a mix of activities across the week. These activities should improve movement skills, muscle fitness and bone strength. I use it to explain why activities that strengthen muscles and bones are part of a healthy lifestyle. I think it is useful because it gives the research behind the advice. But it does not say which weights, sets or repetitions a teenager should use in the gym.</p></div>
+<div class="card" id="source-4"><h2>4. Lloyd and colleagues (2014)</h2><p>Lloyd, R.S. <em>et al.</em> (2014) &#x27;Position statement on youth resistance training: the 2014 International Consensus&#x27;, <em>British Journal of Sports Medicine</em>, 48(7), pp. 498-505. <a href="https://bjsm.bmj.com/content/48/7/498" target="_blank" rel="noopener">Read article</a>.</p><p>This source brings together research and advice from experts in different countries on strength training for children and teenagers. It explains that training can be safe with a qualified person supervising, correct technique and a suitable programme. I use it to explain these safety points. I think it is useful because the authors give research references and clear training advice. But it dates from 2014, and agreement between experts does not prove that every exercise is safe in every setting.</p></div>
+<div class="card" id="source-5"><h2>5. McQuilliam and colleagues (2020)</h2><p>McQuilliam, S.J., Clark, D.R., Erskine, R.M. and Brownlee, T.E. (2020) &#x27;Free-weight resistance training in youth athletes: a narrative review&#x27;, <em>Sports Medicine</em>, 50, pp. 1567-1580. <a href="https://link.springer.com/article/10.1007/s40279-020-01307-7" target="_blank" rel="noopener">Read article</a>.</p><p>This article brings together research on training with free weights in young athletes. It looks at strength and power at different stages of growth. The authors recommend making training harder gradually, with correct technique and a qualified coach. Their advice on heavier weights depends on how far an athlete has developed physically and how well they can do the exercises. I use it to explain why age alone does not show that a teenager is ready for heavier weights. I think the research references make it useful, but advice for athletes will not always suit a beginner.</p></div>
+<div class="card" id="source-6"><h2>6. Everett (2025)</h2><p>Everett, S. (2025) &#x27;Optimizing performance nutrition for adolescent athletes: A review of dietary needs, risks, and practical strategies&#x27;, <em>Nutrients</em>, 17(17), 2792. <a href="https://www.mdpi.com/2072-6643/17/17/2792" target="_blank" rel="noopener">Read article</a>.</p><p>This article brings together research on food and nutrition for teenage athletes. It explains that teenagers must eat enough to give them energy for growth, training and recovery. It also explains the health risks of eating too little. I use it to explain why enough food is important when a teenager trains. The article gives research references, but it does not give a clear search method or explain how it checked each study&#x27;s quality. Its general advice agrees with source 7, but its suggested amounts of food and nutrients will not suit every teenager.</p></div>
+<div class="card" id="source-7"><h2>7. British Dietetic Association (2026)</h2><p>British Dietetic Association (2026) &#x27;Sport and exercise&#x27;. May. Available at: <a href="https://www.bda.uk.com/resource/sport-exercise-nutrition.html" target="_blank" rel="noopener">Read source</a></p><p>This is a public information sheet from the British Dietetic Association. It explains that a varied, balanced diet should give athletes the energy and nutrients they need. Supplements cannot make up for poor food choices, but they can help in some cases. I use it to check the general food advice in source 6. I think it is useful because it names the nutrition experts who wrote it and gives research references. But it gives general advice, so it cannot tell an individual teenager exactly what to eat.</p></div>
+<div class="card" id="source-8"><h2>8. Department of Health and Social Care (2026)</h2><p>Department of Health and Social Care (2026) &#x27;Banning the sale of high-caffeine energy drinks to children: consultation outcome&#x27;. Updated 16 July 2026. Available at: <a href="https://www.gov.uk/government/consultations/banning-the-sale-of-high-caffeine-energy-drinks-to-children/outcome/banning-the-sale-of-high-caffeine-energy-drinks-to-children-consultation-outcome" target="_blank" rel="noopener">Read source</a></p><p>This source is the government&#x27;s own record of its decision about energy drinks with high levels of caffeine. It explains that these drinks carry a warning that they are not recommended for children. I use it for this warning and the planned ban on sales to children under 16 in England. It records a plan to introduce a law, so it does not show that the ban has already started. It is useful for checking that decision, but public responses alone do not prove that these drinks cause health problems. The planned ban includes some powders mixed into drinks, but it does not cover every product sold for use before exercise.</p></div>
+<div class="card" id="source-9"><h2>9. Zhou and colleagues (2025)</h2><p>Zhou, S., Xu, Y., Yang, Y., Song, H., Wang, X. and Yu, Y. (2025) &#x27;Effect of exercise interventions on depression, anxiety, and self-esteem in children and adolescents: a systematic review and network meta-analysis&#x27;, <em>BMC Public Health</em>, 25, 3706. <a href="https://link.springer.com/article/10.1186/s12889-025-25044-6" target="_blank" rel="noopener">Read article</a>.</p><p>This review brings together results from several studies to compare different types of exercise. It includes 27 trials with 3,059 children and teenagers. The results show possible benefits for depression symptoms and self-esteem, but no clear evidence of an overall anxiety benefit. The authors explain how they found the studies and checked their quality. They rate the evidence as low or moderate because the studies differ and some methods could give misleading results. I use it to explain possible mental health benefits, but it does not show that every teenager will benefit.</p></div>
+<div class="card" id="source-10"><h2>10. Collins and colleagues (2019)</h2><p>Collins, H., Booth, J.N., Duncan, A., Fawkner, S. and Niven, A. (2019) &#x27;The effect of resistance training interventions on &quot;the self&quot; in youth: a systematic review and meta-analysis&#x27;, <em>Sports Medicine - Open</em>, 5, 29. <a href="https://link.springer.com/article/10.1186/s40798-019-0205-0" target="_blank" rel="noopener">Read article</a>.</p><p>This review looks at strength training and how children and teenagers feel about themselves. It includes seven studies of children aged 10 to 16, and combines the results from four of these studies. The combined results showed improvements in confidence about strength training and feelings of self-worth. But they did not give clear evidence that participants felt better about how their bodies looked. The authors checked the quality of the studies, but only two received a strong rating. I use it to explain possible benefits for confidence and self-esteem, without promising that training will improve body image.</p></div>
+<div class="card" id="source--"><h2>StrengthLog: checked but not used as evidence</h2><p>Abelsson, A. (2025) &#x27;Strength Training for Teens: The Ultimate Guide&#x27;, <em>StrengthLog</em>. Last reviewed 9 January 2026. Available at: <a href="https://www.strengthlog.com/strength-training-for-teens/" target="_blank" rel="noopener">Read source</a></p><p>This fitness website article gives training advice and links to research. It is easy to read, but the company that publishes it also sells a training app. The article recommends creatine for everyone without clearly explaining the limits of the research on teenagers. Source 6 gives a more careful view, with limited research and conditions for use by teenage athletes. I therefore use research papers and professional advice as evidence for my website. I have kept this article in the list to show that I checked it during the project.</p></div>
+<div class="callout info"><strong>Limits of my research</strong>
+        Some studies concern adults or young athletes rather than teenage beginners. Puberty, the stage when the body develops towards adulthood, can affect results. The research cannot promise a fixed muscle gain or the same mental health benefit for everyone.
       </div>
     </div>
   </div>
